@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+
+
+            text-align: center;
+        }
+
+        h2,
+        h3 {
+            display: inline-block;
+            background-color: #fff;
+            color: black;
+            width: 100px;
+
+        }
+
+        button {
+            background: rgb(60, 100, 255);
+            background: linear-gradient(90deg, rgba(60, 100, 255, 1) 45%, rgba(112, 180, 255, 1) 83%, rgba(93, 183, 255, 1) 95%);
+            border-radius: 25px;
+            width: 90px;
+            height: 45px;
+            font-size: 16px;
+        }
+
+        .main-div {
+
+            width: 340px;
+            height: 320px;
+            background-color: #fff;
+            margin: 10% auto 0;
+            border-radius: 2px;
+            box-shadow: #fff;
+            overflow: hidden;
+            border-radius: 15px;
+            /* -webkit-box-shadow: 2px 2px 61px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 59px -13px rgba(0,0,0,0.75);
+  box-shadow: 2px -1px 11px 0px #c0bebe; */
+            filter: drop-shadow(0px 1px 11.5px rgba(0, 0, 0, 0.16));
+            ;
+        }
+
+        h2 {
+            border: 5px solid white;
+            background-color: gray;
+            background: linear-gradient(90deg, rgba(60, 100, 255, 1) 45%, rgba(112, 180, 255, 1) 83%, rgba(93, 183, 255, 1) 95%);
+            border-radius: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-div">
+        <div>
+            <h3>STOP WATCH</h3>
+        </div>
+        <div>
+            <h2 id="min">0</h2>
+            <h2 id="sec">0</h2>
+            <h2 id="msec">0</h2>
+        </div>
+        <div>
+            <button id="stop" onclick="start()">Start</button>
+            <button onclick="stop()">Stop</button>
+            <button onclick="reset()">Reset</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
