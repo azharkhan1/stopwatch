@@ -33,9 +33,12 @@ var msecHeading = document.getElementById("msec");
 var interval;
 
 function reset(){
-        secHeading.innerHTML =0;
-        minHeading.innerHTML =0;
-        msecHeading.innerHTML =0;
+    min = 0;
+    sec = 0;
+    msec = 0;
+    secHeading.innerHTML = min;
+    minHeading.innerHTML = sec;
+    msecHeading.innerHTML = msec;
 }
 function stop(){
 
